@@ -1,0 +1,3 @@
+This repo contain two files: 
+- General purpose code.ipynb: Dataset creation, general code, and traing model phase
+- Demo Covid-19 Prediction.ipynb: Notebook for run the inference pipeline
