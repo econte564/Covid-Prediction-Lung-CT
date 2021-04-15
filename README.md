@@ -26,4 +26,8 @@ The general pipeline process is:
 
 ![Pipeline image](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/pipeline.jpg?raw=true)
 
-<p>ciao<\p>
+<h2>Model</h2>
+The best performing model is an SVM with a linear kernel that obtains an accuracy of 81% and an AUC of 85%. The counfusion matrix is reported below:
+
+![Confusion matrix](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/confusion_matrix.jpg?raw=true)
+
