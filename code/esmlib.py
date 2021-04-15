@@ -2,7 +2,6 @@
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
 warnings.filterwarnings("ignore", category=RuntimeWarning) 
-#test repository git
 
 #General library
 import numpy as np
@@ -90,10 +89,16 @@ def get_metadata(folder_path):
     lista = glob.glob(folder_path + "\\" + "*.dcm")
     n = len(lista)
     ds = dcmread(lista[0])
-    print("Paziente: " + str(ds.PatientID))
-    print("Sesso: " + str(ds.PatientSex))
-    print("Età: " + str(int(ds.PatientAge[:-1])))
-    print("Moalità esame: " + str(ds.Modality))
+    print("PatientID: " + str(ds.PatientID))
+    print("\tSex: " + str(ds.PatientSex))
+    print("\tAge: " + str(int(ds.PatientAge[:-1])))
+    print("\nStudy Description: " + str(ds.StudyDescription))
+    print("\tExam Modality: " + str(ds.Modality))
+    print("\tNumber of scans: " + str(len(lista)))
+    print("\tImage size " + str(ds.Rows) + "x" + str(ds.Columns))
+    print("\tPatient Position: " + str(ds.PatientPosition))
+    print("\tSlice Thickness: " + str(ds.SliceThickness))
+    print("\tSpace between slices: " + str(ds.SpacingBetweenSlices))
     return None
 
 # This function load and process the image related to the specified path
@@ -237,9 +242,9 @@ def covid_predict(feat):
     proba = model.predict_proba(input_model)[0,idx_predicted]
     proba = np.around(proba,4) * 100
     if idx_predicted == 0:
-        print("Il paziente è negativo con una confidenza del " + str(proba[0]) + "%")
+        print("The patient is negative to Covid-19 with a confidence of " + str(proba[0]) + "%")
     else:
-        print("Il paziente è positivo con una confidenza del " + str(proba[0]) + "%")
+        print("The patient is positive to Covid-19 with a confidence of " + str(proba[0]) + "%")
     return None
 
 
