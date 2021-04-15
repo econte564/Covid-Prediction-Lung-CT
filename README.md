@@ -20,4 +20,6 @@ The general pipeline process is:
 - Feature Reduction through PCA
 - Feeding to the Classifier
 
+![Pipeline image](https://github.com/[MattiaRigi97]/[Covid-Prediction-Lung-CT]/blob/[images]/pipeline.jpg?raw=true)
+
 
