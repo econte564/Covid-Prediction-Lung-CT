@@ -36,5 +36,6 @@ Finally, the processed data is fed into the different Classifiers (SVM, Logistic
 ![Confusion matrix](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/confusion_matrix.jpg?raw=true) 
 </p>
 
-![AUC](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/AUC.jpg?raw=true) </p>
-
+<p> 
+![AUC](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/AUC.jpg?raw=true)
+</p>
