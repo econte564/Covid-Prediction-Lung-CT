@@ -31,11 +31,7 @@ We obtain three 4x13 matrices that we reshape into a single vector of 156 featur
 
 <h2>Model</h2>
 Finally, the processed data is fed into the different Classifiers (SVM, Logistic Regression, Random Forest, Ensemble methods). All methods were tested with 5-fold Cross Validation and 80/20 train/test split stratified on the labels. SVM with a linear kernel obtained the best results both in terms of AUC(85%), Accuracy(81%), Precision (81%) and Recall(80%). The counfusion matrix and the AUC plot is reported below: <br />
-
-<p> 
-  ![Confusion matrix](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/confusion_matrix.jpg?raw=true) 
-</p>
-
-<p> 
-  ![AUC](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/AUC.jpg?raw=true) 
-</p>
+<br>
+![Confusion matrix](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/confusion_matrix.jpg?raw=true) 
+<br>
+![AUC](https://github.com/MattiaRigi97/Covid-Prediction-Lung-CT/blob/main/images/AUC.jpg?raw=true)
